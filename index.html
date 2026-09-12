@@ -1,0 +1,2297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kunal Kumar — Computer Science & Software Developer</title>
+  <meta name="description" content="Portfolio of Kunal Kumar — Computer Science student at Lovely Professional University, exploring AI, software engineering, and web systems.">
+  <meta name="author" content="Kunal Kumar">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✏️</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Foliage Window Light & Plant Leaves Overlay in Top-Right -->
+  <div class="ambient-foliage-shadow" aria-hidden="true"></div>
+  <div class="top-right-plant-leaves" aria-hidden="true">
+    <svg viewBox="0 0 260 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Realistic lush green plant leaves peeking from top-right corner -->
+      <path d="M260 0 C220 30 180 80 190 140 C170 100 160 50 200 0 Z" fill="#1C381E" opacity="0.95"/>
+      <path d="M260 20 C210 60 170 120 185 180 C165 140 150 80 200 20 Z" fill="#29512B" opacity="0.9"/>
+      <path d="M260 60 C230 100 205 150 220 200 C200 160 190 110 230 60 Z" fill="#3A6D3C" opacity="0.85"/>
+      <!-- Leaf highlights & ribs -->
+      <path d="M220 35 Q195 90 188 145" stroke="#4E8C51" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+      <path d="M230 80 Q215 130 216 185" stroke="#5DA361" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    </svg>
+  </div>
+
+  <!-- ==========================================================================
+       LEFT MATTE RAIL (DOCK SIDEBAR)
+       ========================================================================== -->
+  <aside class="dock-sidebar" id="dock" aria-label="Portfolio Navigation">
+    <a href="#home" class="dock-brand" title="Kunal Kumar">
+      <span class="dock-brand-logo">K.</span>
+      <span class="dock-brand-name">Kunal</span>
+      <div class="dock-divider"></div>
+    </a>
+
+    <nav class="dock-nav">
+      <a href="#home" class="dock-item active" title="Desk Home">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+        </svg>
+        <span>Home</span>
+      </a>
+
+      <a href="#about" class="dock-item" title="Currently Working On">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+        </svg>
+        <span>About</span>
+      </a>
+
+      <a href="#skills" class="dock-item" title="Skills & Tech Arsenal">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+        </svg>
+        <span>Skills</span>
+      </a>
+
+      <a href="#work" class="dock-item" title="Selected Projects">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+        </svg>
+        <span>Projects</span>
+      </a>
+
+      <a href="#education" class="dock-item" title="Education & Work Experience">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+          <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+        </svg>
+        <span>Edu & Work</span>
+      </a>
+
+      <a href="#contact" class="dock-item" title="Contact & Profiles">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+        <span>Contact</span>
+      </a>
+    </nav>
+
+    <div class="dock-bottom">
+      <div class="dock-quote-side">
+        "Good conversations lead to great opportunities."
+      </div>
+      <div class="dock-meta-stamp">
+        <span>INDIA</span>
+        <span>UTC +5:30</span>
+        <span>&copy; 2026</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       MAIN DESK VIEWPORT & PAPER WORKSPACE
+       ========================================================================== -->
+  <main class="desk-viewport">
+    <div class="paper-sheet">
+
+      <!-- Drafting Ruler Guide Bar -->
+      <div class="drafting-ruler-top" aria-hidden="true"></div>
+
+      <!-- Top Status / Meta Header Bar -->
+      <header class="desk-meta-header">
+        <div class="meta-left">
+          <div class="meta-location">
+            <span class="live-indicator-dot"></span>
+            <span>INDIA (IST)</span>
+          </div>
+          <div id="live-ist-clock" class="meta-time">LOADING IST...</div>
+        </div>
+
+        <div class="meta-center">
+          A COMPUTER SCIENCE STUDENT<br>
+          EXPLORING IDEAS AT THE INTERSECTION OF<br>
+          AI, SOFTWARE AND REAL-WORLD PROBLEMS.
+        </div>
+
+        <div class="meta-right">
+          IDEAS<br>
+          CODE<br>
+          LEARN<br>
+          REPEAT
+        </div>
+      </header>
+
+      <!-- ======================================================================
+           SECTION 01: HERO DESK SPREAD (Non-overlapping 3-Column Studio Layout)
+           ====================================================================== -->
+      <section id="home" class="hero-spread">
+        
+        <!-- Column 1: Left Lead Content -->
+        <div class="hero-left-col">
+          <div class="section-tag-row">
+            <span class="section-num-tag">01</span>
+            <span class="section-tag-line"></span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-wrapper"><span class="highlight-text">Kunal.</span><span class="highlight-brush" aria-hidden="true"></span></span>
+          </h1>
+
+          <p class="hero-subquote">
+            I build digital experiences<br>that turn ideas into reality.
+          </p>
+
+          <p class="hero-bio-lead">
+            I'm a Computer Science student who loves solving problems, exploring AI/ML, building web applications and learning new things every day.
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="#work" class="btn-tactile-dark">
+              <span>Explore My Work</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="#education" class="btn-tactile-outline">
+              <span>About Me</span>
+            </a>
+          </div>
+
+          <div class="scroll-cue">
+            <span>&bull; SCROLL</span>
+            <span>&darr;</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Center Pinned Polaroid Photo -->
+        <div class="hero-center-col">
+          <div class="polaroid-card">
+            <!-- Pushpin -->
+            <div class="pushpin" aria-hidden="true">
+              <div class="pushpin-head"></div>
+              <div class="pushpin-shadow"></div>
+            </div>
+
+            <div class="polaroid-photo-frame">
+              <img src="assets/setup.jpg" alt="Cozy workspace desk setup with code editor and mountain window view">
+            </div>
+            <div class="polaroid-caption">
+              Current Setup &mdash; Where ideas take shape.
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: Right Marginalia & Handwritten Notes -->
+        <div class="hero-right-col">
+          <div class="handwritten-motto-top">
+            Same curiosity<br>
+            Different problems<br>
+            More to build.
+          </div>
+
+          <div class="checklist-container">
+            <div class="todo-item checked">
+              <span class="todo-checkbox"></span>
+              <span class="todo-label">Learn more</span>
+            </div>
+            <div class="todo-item checked">
+              <span class="todo-checkbox"></span>
+              <span class="todo-label">Build more</span>
+            </div>
+            <div class="todo-item checked">
+              <span class="todo-checkbox"></span>
+              <span class="todo-label">Stay consistent</span>
+            </div>
+            <div class="todo-item checked">
+              <span class="todo-checkbox"></span>
+              <span class="todo-label">Make an impact</span>
+            </div>
+          </div>
+
+          <div class="handwritten-motto-bottom">
+            "Progress<br>over<br>Perfection."
+          </div>
+
+          <div class="handwritten-sub-arrow">
+            &nearr; This is just the beginning...
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ======================================================================
+           MIDDLE TACTILE GRID: SKILLS, LIVE PROGRESS, FIND ME
+           ====================================================================== -->
+      <section class="middle-desk-grid">
+
+        <!-- Column 02: Things I Enjoy (Summary) -->
+        <div class="grid-desk-column" id="overview-interests">
+          <div class="col-header-row">
+            <span class="col-index">02</span>
+            <h2 class="col-title">Things I Enjoy</h2>
+          </div>
+
+          <div class="arsenal-list">
+            <div class="arsenal-item">
+              <span class="arsenal-icon">&#129504;</span>
+              <div class="arsenal-text">
+                <span class="arsenal-name">AI / Machine Learning</span>
+                <span class="arsenal-detail">Anthropic Claude tools, practical workflows & models</span>
+              </div>
+            </div>
+
+            <div class="arsenal-item">
+              <span class="arsenal-icon">&lt;/&gt;</span>
+              <div class="arsenal-text">
+                <span class="arsenal-name">Web Development</span>
+                <span class="arsenal-detail">HTML5, CSS3, Modern JavaScript & responsive UI</span>
+              </div>
+            </div>
+
+            <div class="arsenal-item">
+              <span class="arsenal-icon">&#128452;</span>
+              <div class="arsenal-text">
+                <span class="arsenal-name">Databases & SQL</span>
+                <span class="arsenal-detail">MySQL, SQLite, relational schemas & queries</span>
+              </div>
+            </div>
+
+            <div class="arsenal-item">
+              <span class="arsenal-icon">&#9881;</span>
+              <div class="arsenal-text">
+                <span class="arsenal-name">C / C++ & Python</span>
+                <span class="arsenal-detail">High efficiency, system logic & backend scripts</span>
+              </div>
+            </div>
+
+            <div class="arsenal-item">
+              <span class="arsenal-icon">&#129513;</span>
+              <div class="arsenal-text">
+                <span class="arsenal-name">Problem Solving & DSA</span>
+                <span class="arsenal-detail">Data Structures, Algorithms & LeetCode practice</span>
+              </div>
+            </div>
+
+            <div class="arsenal-item">
+              <span class="arsenal-icon">&#128214;</span>
+              <div class="arsenal-text">
+                <span class="arsenal-name">Reading & Learning</span>
+                <span class="arsenal-detail">Technical architectures, docs & curious ideas</span>
+              </div>
+            </div>
+
+            <div class="arsenal-item">
+              <span class="arsenal-icon">&#127918;</span>
+              <div class="arsenal-text">
+                <span class="arsenal-name">Games (sometimes)</span>
+                <span class="arsenal-detail">Strategy & unwinding downtime</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 03: Currently Working On & Certifications -->
+        <div class="grid-desk-column" id="col-working-on">
+          <div class="col-header-row">
+            <span class="col-index">03</span>
+            <h2 class="col-title">Currently Working On</h2>
+          </div>
+
+          <!-- Progress Card -->
+          <div class="progress-card">
+            <h3 class="progress-title">A smarter way to learn.</h3>
+            
+            <div class="progress-bar-track">
+              <div class="progress-bar-fill" style="width: 60%;"></div>
+            </div>
+            <div class="progress-percent-label">60% Completed</div>
+
+            <p class="progress-desc">
+              An AI-assisted platform designed to personalize technical learning based on individual goals, pace, and core interests. Built with modern web architecture and intelligent guidance.
+            </p>
+
+            <div class="progress-footer">
+              <a href="#work" class="btn-progress-arrow" title="View Project Details">&rarr;</a>
+              <span class="handwritten-progress-motto">Learning &bull; Building &bull; Improving...</span>
+            </div>
+          </div>
+
+          <!-- Verified Certifications -->
+          <div class="certs-badge-group">
+            <div class="cert-pill">
+              <span class="cert-name">Claude Code in Action</span>
+              <span class="cert-issuer">Anthropic &bull; 2026</span>
+            </div>
+            <div class="cert-pill">
+              <span class="cert-name">AI Fluency for Students</span>
+              <span class="cert-issuer">Anthropic &bull; 2026</span>
+            </div>
+            <div class="cert-pill">
+              <span class="cert-name">Introduction to AI</span>
+              <span class="cert-issuer">Infosys Springboard &bull; 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 04: Where to Find Me / Contacts -->
+        <div class="grid-desk-column" id="contact">
+          <div class="col-header-row">
+            <span class="col-index">04</span>
+            <h2 class="col-title">Where To Find Me</h2>
+          </div>
+
+          <div class="contact-links-list">
+            <!-- GitHub -->
+            <a href="https://github.com/Kunalkumar93" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+              <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+              </svg>
+              <div class="contact-meta">
+                <span class="contact-platform">GitHub</span>
+                <span class="contact-handle">@Kunalkumar93</span>
+              </div>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/kunal-kumar-38729737b" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+              <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+              </svg>
+              <div class="contact-meta">
+                <span class="contact-platform">LinkedIn</span>
+                <span class="contact-handle">kunal-kumar-38729737b</span>
+              </div>
+            </a>
+
+            <!-- LeetCode -->
+            <a href="https://leetcode.com/u/kunalkr1773" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+              <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.874 5.874 0 0 0 .349 1.017 5.938 5.938 0 0 0 4.818 3.593 5.86 5.86 0 0 0 2.825-.371 5.92 5.92 0 0 0 1.258-.722l4.87-4.482a1.378 1.378 0 0 0 .025-1.94 1.378 1.378 0 0 0-1.94-.025L9.3 17.375a3.175 3.175 0 0 1-2.587.217 3.193 3.193 0 0 1-1.523-.974 3.245 3.245 0 0 1-.67-2.316 3.14 3.14 0 0 1 1.263-2.146l3.9-4.17 4.36-4.908a1.373 1.373 0 0 0-.96-2.072zm3.178 7.373a1.378 1.378 0 0 0-1.378 1.378v5.892a1.378 1.378 0 1 0 2.756 0V8.751a1.378 1.378 0 0 0-1.378-1.378z"></path>
+              </svg>
+              <div class="contact-meta">
+                <span class="contact-platform">LeetCode</span>
+                <span class="contact-handle">@kunalkr1773 &bull; DSA</span>
+              </div>
+            </a>
+
+            <!-- Direct Email -->
+            <a href="mailto:kunalkrps177@gmail.com" class="contact-link-row">
+              <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              <div class="contact-meta">
+                <span class="contact-platform">Email</span>
+                <span class="contact-handle">kunalkrps177@gmail.com</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ======================================================================
+           SECTION 02: ABOUT (Craftsman Reference Aesthetic & Personal Chronicle)
+           ====================================================================== -->
+      <section id="about" class="section-full-spread about-craft-desk">
+        
+        <!-- Top Section Meta Navigation Bar -->
+        <div class="about-top-bar">
+          <div class="about-top-left">
+            Still figuring it out... (and that's okay) &rarr;
+          </div>
+
+          <div class="about-top-center">
+            A COMPUTER SCIENCE STUDENT EXPLORING IDEAS AT THE INTERSECTION OF AI, SOFTWARE AND REAL-WORLD PROBLEMS.
+          </div>
+
+          <div class="about-top-right">
+            <span>BUILD</span>
+            <span>LEARN</span>
+            <span>IMPROVE</span>
+            <span>REPEAT</span>
+            <span class="about-live-dot" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <!-- Upper 3-Column Hero Area: Pinned Polaroid, Bio Headline, Quick Facts & Quote -->
+        <div class="about-hero-grid">
+
+          <!-- Column 1: Pinned Polaroid with Tape & Desk Photo -->
+          <div class="about-photo-col">
+            <div class="photo-tape-top-left" aria-hidden="true"></div>
+            <div class="photo-tape-top-right" aria-hidden="true"></div>
+            
+            <div class="about-polaroid-frame">
+              <img src="assets/about_kunal.jpg" alt="Kunal Kumar sitting at his coding workspace in his dark hoodie" class="about-photo-img">
+              <div class="about-polaroid-caption">
+                A student. A builder. A work in progress.
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Bio & Editorial Headline -->
+          <div class="about-bio-col">
+            <div class="about-meta-row">
+              <span class="about-index-tag">01</span>
+              <div class="about-meta-rule"></div>
+              <span class="about-meta-title">ABOUT ME</span>
+            </div>
+
+            <h2 class="about-main-title">
+              More than<br>
+              just a <mark class="yellow-highlighter-brush">student.</mark>
+            </h2>
+
+            <p class="about-bio-p">
+              I'm Kunal Kumar, a Computer Science student who enjoys turning ideas into real things. I'm passionate about AI/ML, software development and problem solving. I love learning new technologies, building projects, and exploring how tech can make a meaningful impact.
+            </p>
+
+            <p class="about-bio-p">
+              When I'm not coding, you'll probably find me reading literature, exploring new ideas, writing, or playing sports and unwinding.
+            </p>
+          </div>
+
+          <!-- Column 3: Quick Facts Notepad + Quote Note -->
+          <div class="about-facts-col">
+            
+            <!-- Quick Facts Notepad -->
+            <div class="quick-facts-card">
+              <!-- Metallic Paperclip Graphic -->
+              <svg viewBox="0 0 24 48" class="paperclip-graphic" aria-hidden="true">
+                <path d="M6 12v22a6 6 0 0012 0V9a4 4 0 00-8 0v24a2 2 0 004 0V14" fill="none" stroke="#8E9297" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+
+              <h3 class="quick-facts-title">Quick Facts</h3>
+
+              <div class="facts-table">
+                <div class="fact-row">
+                  <span class="fact-icon">&#128100;</span>
+                  <span class="fact-label">Name</span>
+                  <span class="fact-value">Kunal Kumar</span>
+                </div>
+
+                <div class="fact-row">
+                  <span class="fact-icon">&#127891;</span>
+                  <span class="fact-label">Education</span>
+                  <span class="fact-value">B.Tech CSE (3rd Sem)</span>
+                </div>
+
+                <div class="fact-row">
+                  <span class="fact-icon">&#128205;</span>
+                  <span class="fact-label">Location</span>
+                  <span class="fact-value">India (Bihar / Punjab)</span>
+                </div>
+
+                <div class="fact-row">
+                  <span class="fact-icon">&#128187;</span>
+                  <span class="fact-label">Interests</span>
+                  <span class="fact-value">AI/ML &bull; Web Dev &bull; Systems</span>
+                </div>
+
+                <div class="fact-row">
+                  <span class="fact-icon">&#127918;</span>
+                  <span class="fact-label">Hobbies</span>
+                  <span class="fact-value">Literature &bull; Sports &bull; Writing &bull; Gaming</span>
+                </div>
+
+                <div class="fact-row">
+                  <span class="fact-icon">&#127919;</span>
+                  <span class="fact-label">Current Goal</span>
+                  <span class="fact-value">Learn. Build. Grow.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Lower Sage Quote Note -->
+            <div class="about-quote-note">
+              <p class="quote-snippet-text">
+                "A little progress every day adds up to big results."
+              </p>
+              <div class="quote-snippet-author">
+                &mdash; Kunal
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Lower Section: My Journey So Far (Without Timeline) -->
+        <div class="journey-far-divider">
+          <div class="journey-divider-left">
+            <span class="journey-sec-index">02</span>
+            <h3 class="journey-sec-title">My Journey So Far</h3>
+          </div>
+          <div class="journey-divider-right">
+            STILL A LONG WAY TO GO... &rarr;
+          </div>
+        </div>
+
+        <!-- Journey Split: 4 Milestone Pillars + Mountain Landscape Illustration -->
+        <div class="journey-split-layout">
+          
+          <!-- 4 Thematic Pillars (NO Timeline / NO Dates as requested) -->
+          <div class="journey-pillars-grid">
+
+            <!-- Pillar 1: The Foundation -->
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 19V5M5 12l7-7 7 7"/>
+                  <path d="M12 19c-4 0-7-2-7-6 0-3 2-6 7-8 5 2 7 5 7 8 0 4-3 6-7 6z"/>
+                </svg>
+              </div>
+              <h4 class="pillar-title">The Foundation</h4>
+              <p class="pillar-text">
+                Curious about how things work. Started coding, mastering procedural logic in C and C++, and solving problems one step at a time.
+              </p>
+            </div>
+
+            <!-- Pillar 2: Core CSE & Literature (3rd Sem) -->
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                  <line x1="8" y1="7" x2="16" y2="7"/>
+                  <line x1="8" y1="11" x2="14" y2="11"/>
+                </svg>
+              </div>
+              <h4 class="pillar-title">Learning & Exploring</h4>
+              <p class="pillar-text">
+                Dived deep into 3rd sem CSE core coursework: DSA, OOP, and DBMS. Balancing rigorous tech with reading literature and analytical writing.
+              </p>
+            </div>
+
+            <!-- Pillar 3: Building & Creating -->
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#EA580C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                </svg>
+              </div>
+              <h4 class="pillar-title">Building &amp; Creating</h4>
+              <p class="pillar-text">
+                Developing personal projects, modern web apps, and exploring Claude/agentic workflows while maintaining daily problem-solving on LeetCode.
+              </p>
+            </div>
+
+            <!-- Pillar 4: What's Next -->
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#0284C7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+                  <line x1="4" y1="22" x2="4" y2="15"/>
+                </svg>
+              </div>
+              <h4 class="pillar-title">What's Next</h4>
+              <p class="pillar-text">
+                Keep learning, deepen system architecture &amp; ML concepts, collaborate with fellow builders, and ship software that creates real value.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Mountain Range Landscape Sketch with Winding Path -->
+          <div class="journey-mountain-landscape">
+            <svg viewBox="0 0 240 130" class="landscape-sketch-svg" width="230" height="125" aria-label="Mountain landscape with trail and arrow">
+              <!-- Mountain Ridges -->
+              <polygon points="120,22 175,90 65,90" fill="none" stroke="#2B2B32" stroke-width="1.8" stroke-linejoin="round"/>
+              <polygon points="170,35 220,95 130,95" fill="none" stroke="#2B2B32" stroke-width="1.6" stroke-linejoin="round"/>
+              <polygon points="60,40 115,95 15,95" fill="none" stroke="#2B2B32" stroke-width="1.6" stroke-linejoin="round"/>
+              
+              <!-- Snow & Facet Lines -->
+              <path d="M102 44 L120 52 L138 43" fill="none" stroke="#2B2B32" stroke-width="1.3"/>
+              <path d="M152 56 L170 62 L186 54" fill="none" stroke="#2B2B32" stroke-width="1.1"/>
+              <path d="M42 58 L60 64 L76 56" fill="none" stroke="#2B2B32" stroke-width="1.1"/>
+              <line x1="120" y1="22" x2="115" y2="88" stroke="#2B2B32" stroke-width="1.2"/>
+              <line x1="108" y1="52" x2="98" y2="76" stroke="#2B2B32" stroke-width="0.8" stroke-dasharray="2 2"/>
+              <line x1="112" y1="42" x2="102" y2="66" stroke="#2B2B32" stroke-width="0.8" stroke-dasharray="2 2"/>
+              
+              <!-- Foothills Terrain & Winding Trail -->
+              <path d="M10 95 Q 120 85 230 95" fill="none" stroke="#2B2B32" stroke-width="1.5"/>
+              <path d="M95 90 Q 110 105 105 115 T 130 128" fill="none" stroke="#2B2B32" stroke-width="1.6" stroke-dasharray="4 3"/>
+              
+              <!-- Pine Trees -->
+              <polygon points="30,76 34,90 26,90" fill="#2B2B32"/>
+              <polygon points="38,72 42,90 34,90" fill="#2B2B32"/>
+              <polygon points="46,78 50,90 42,90" fill="#2B2B32"/>
+              <polygon points="190,75 194,90 186,90" fill="#2B2B32"/>
+              <polygon points="198,72 202,90 194,90" fill="#2B2B32"/>
+              <polygon points="208,77 212,90 204,90" fill="#2B2B32"/>
+
+              <!-- Curved Arrow Pointing Up -->
+              <path d="M150 25 Q 185 10 205 20" fill="none" stroke="#2B2B32" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <polygon points="208,18 200,24 207,26" fill="#2B2B32"/>
+            </svg>
+            <div class="landscape-callout-text">Higher Ideas Ahead &#8599;</div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Footer Bar -->
+        <div class="about-bottom-bar">
+          <div class="about-motto-highlight">
+            <mark class="yellow-highlighter-brush">Better Tools. Brighter Ideas.</mark>
+          </div>
+          <div class="about-stamp-link">
+            LET'S BUILD SOMETHING GREAT &rarr;
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ======================================================================
+           SECTION 03: SKILLS (Craftsman Reference Aesthetic & Visual Toolkit)
+           ====================================================================== -->
+      <section id="skills" class="section-full-spread skills-craft-desk">
+        
+        <!-- Left Margin Handwritten Scribble (Matching Image) -->
+        <aside class="skills-margin-quote" aria-hidden="true">
+          <span>"Skills are tools. Curiosity is the real superpower."</span>
+        </aside>
+
+        <!-- 1. Top Section Meta Navigation Bar -->
+        <div class="skills-top-nav-bar">
+          <div class="skills-top-left-box">
+            <span class="skills-index-badge">03</span>
+            <div class="skills-top-meta">
+              <span class="skills-section-label">SKILLS</span>
+              <span class="skills-section-subline">TOOLS I USE. THINGS I'M LEARNING. AREAS I EXPLORE.</span>
+            </div>
+          </div>
+
+          <div class="skills-top-handwritten">
+            Always a work in progress.
+          </div>
+
+          <div class="skills-top-stamp">
+            <span>BUILD</span>
+            <span>LEARN</span>
+            <span>IMPROVE</span>
+            <span>REPEAT</span>
+          </div>
+        </div>
+
+        <!-- 2. Hero Headline, Middle Toolkit Box, and Pinned Setup Photo -->
+        <div class="skills-hero-banner">
+          
+          <!-- Left: Big Editorial Headline -->
+          <div class="skills-hero-headline-col">
+            <h2 class="skills-main-title">
+              Skills<br>
+              that help me<br>
+              build, learn<br>
+              <mark class="yellow-highlighter-brush">and explore.</mark>
+            </h2>
+            <p class="skills-main-desc">
+              A mix of technical skills, creative tools and problem solving abilities that I use to turn ideas into reality.
+            </p>
+          </div>
+
+          <!-- Middle: Framed Toolkit Card -->
+          <div class="skills-hero-box-col">
+            <div class="skills-limits-box">
+              <div class="limits-box-tag">SKILLS &ne; LIMITS</div>
+              <div class="limits-box-handwriting">
+                Just a toolkit<br>
+                I keep upgrading. &#9786;
+              </div>
+            </div>
+            <p class="skills-comfort-text">
+              <strong>Comfortable</strong> with what I know, more excited about what I'm <em>still learning</em>.
+            </p>
+          </div>
+
+          <!-- Right: Framed Photo with Blue Washi Tape -->
+          <div class="skills-hero-photo-col">
+            <div class="washi-tape-strip" aria-hidden="true"></div>
+            <div class="skills-framed-photo">
+              <img src="assets/setup.jpg" alt="Kunal's desk setup with inspirational notes">
+              <div class="photo-caption-tag">DEV WORKBENCH</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 3. The 3x2 Main Skills Grid (No Percentages) -->
+        <div class="skills-matrix-grid">
+
+          <!-- Row 1, Col 1: Programming Languages -->
+          <div class="matrix-card">
+            <div class="matrix-card-header">
+              <h3 class="matrix-card-title">Programming Languages</h3>
+              <span class="matrix-card-sub">// THE BASICS</span>
+            </div>
+            <div class="matrix-icons-row">
+              <!-- Python -->
+              <div class="tech-icon-item" title="Python">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <path d="M19 3C11.5 3 12 6.5 12 6.5l.005 3.5H19v1H8.5S3 10.5 3 18s4.8 7.3 4.8 7.3h2.8v-4s-.15-4.8 4.7-4.8h8.2s4.5.07 4.5-4.4V6.5S26.5 3 19 3zm-3.5 2.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z" fill="#366A96"/>
+                    <path d="M19 35c7.5 0 7-3.5 7-3.5l-.005-3.5H19v-1h10.5s5.5.5 5.5-7-4.8-7.3-4.8-7.3h-2.8v4s.15 4.8-4.7 4.8h-8.2s-4.5-.07-4.5 4.4v5.6s1.5 3.5 9 3.5zm3.5-2.5a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z" fill="#FFD438"/>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">Python</span>
+              </div>
+              <!-- C++ -->
+              <div class="tech-icon-item" title="C++">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <polygon points="19,3 34,11.5 34,26.5 19,35 4,26.5 4,11.5" fill="#00599C" stroke="#00447C" stroke-width="1.5"/>
+                    <text x="19" y="23" font-family="'Courier Prime', monospace" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">C++</text>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">C++</span>
+              </div>
+              <!-- C -->
+              <div class="tech-icon-item" title="C">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <polygon points="19,3 33,11.5 33,26.5 19,35 5,26.5 5,11.5" fill="#283593" stroke="#1A237E" stroke-width="1.5"/>
+                    <text x="19" y="24" font-family="'Courier Prime', monospace" font-size="15" font-weight="900" fill="#FFFFFF" text-anchor="middle">C</text>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">C</span>
+              </div>
+              <!-- SQL -->
+              <div class="tech-icon-item" title="SQL">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <ellipse cx="19" cy="9" rx="13" ry="4.5" fill="#0284C7"/>
+                    <path d="M6 9v7c0 2.5 5.82 4.5 13 4.5s13-2 13-4.5V9" fill="none" stroke="#0284C7" stroke-width="2.2"/>
+                    <path d="M6 16v7c0 2.5 5.82 4.5 13 4.5s13-2 13-4.5v-7" fill="none" stroke="#0284C7" stroke-width="2.2"/>
+                    <text x="19" y="22" font-family="'Courier Prime', monospace" font-size="9" font-weight="900" fill="#FFFFFF" text-anchor="middle">SQL</text>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">SQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 1, Col 2: Web Development -->
+          <div class="matrix-card">
+            <div class="matrix-card-header">
+              <h3 class="matrix-card-title">Web Development</h3>
+              <span class="matrix-card-sub">// BUILDING FOR THE WEB</span>
+            </div>
+            <div class="matrix-icons-row">
+              <!-- HTML5 -->
+              <div class="tech-icon-item" title="HTML5">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <path d="M7 4l2.5 28 9.5 3 9.5-3 2.5-28H7z" fill="#E44D26"/>
+                    <path d="M19 6.5v26l7.5-2.2 2-23.8H19z" fill="#F16529"/>
+                    <path d="M12 12h14l-.4 4.5h-9.3l.3 3.5h8.6l-.7 8-5.5 1.5-5.5-1.5-.4-4h3.6l.2 2 2.1.6 2.1-.6.3-3.5h-9.5L12 12z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">HTML</span>
+              </div>
+              <!-- CSS3 -->
+              <div class="tech-icon-item" title="CSS3">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <path d="M7 4l2.5 28 9.5 3 9.5-3 2.5-28H7z" fill="#1572B6"/>
+                    <path d="M19 6.5v26l7.5-2.2 2-23.8H19z" fill="#33A9DC"/>
+                    <path d="M12 12h14l-.4 4.5h-9.3l.3 3.5h8.6l-.7 8-5.5 1.5-5.5-1.5-.4-4h3.6l.2 2 2.1.6 2.1-.6.3-3.5h-9.5L12 12z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">CSS</span>
+              </div>
+              <!-- JavaScript -->
+              <div class="tech-icon-item" title="JavaScript">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <rect x="4" y="4" width="30" height="30" rx="3" fill="#F7DF1E"/>
+                    <text x="20" y="26" font-family="system-ui, sans-serif" font-size="16" font-weight="900" fill="#000000">JS</text>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">JavaScript</span>
+              </div>
+              <!-- Responsive UI -->
+              <div class="tech-icon-item" title="Responsive Layouts & DOM">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <rect x="4" y="7" width="20" height="15" rx="2" fill="none" stroke="#0D9488" stroke-width="2"/>
+                    <rect x="18" y="14" width="16" height="17" rx="2" fill="#F0FDFA" stroke="#0D9488" stroke-width="2"/>
+                    <circle cx="26" cy="28" r="1.2" fill="#0D9488"/>
+                    <line x1="8" y1="18" x2="14" y2="18" stroke="#0D9488" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">Web Layouts</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 1, Col 3: Databases -->
+          <div class="matrix-card">
+            <div class="matrix-card-header">
+              <h3 class="matrix-card-title">Databases</h3>
+              <span class="matrix-card-sub">// STORE & MANAGE DATA</span>
+            </div>
+            <div class="matrix-icons-row">
+              <!-- MySQL -->
+              <div class="tech-icon-item" title="MySQL">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <rect x="3" y="6" width="32" height="26" rx="4" fill="#00618A"/>
+                    <text x="19" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="900" fill="#E48E00" text-anchor="middle">My<tspan fill="#FFFFFF">SQL</tspan></text>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">MySQL</span>
+              </div>
+              <!-- SQLite -->
+              <div class="tech-icon-item" title="SQLite">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <rect x="3" y="6" width="32" height="26" rx="4" fill="#003B57"/>
+                    <path d="M12 13c3-2.5 7-2.5 10 0" fill="none" stroke="#41B883" stroke-width="2"/>
+                    <text x="19" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="800" fill="#FFFFFF" text-anchor="middle">SQLite</text>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">SQLite</span>
+              </div>
+              <!-- Relational SQL -->
+              <div class="tech-icon-item" title="Relational Queries & ACID">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <ellipse cx="19" cy="8" rx="12" ry="4" fill="#4338CA"/>
+                    <path d="M7 8v6c0 2.2 5.4 4 12 4s12-1.8 12-4V8" fill="none" stroke="#4338CA" stroke-width="2"/>
+                    <path d="M7 14v6c0 2.2 5.4 4 12 4s12-1.8 12-4v-6" fill="none" stroke="#4338CA" stroke-width="2"/>
+                    <path d="M7 20v6c0 2.2 5.4 4 12 4s12-1.8 12-4v-6" fill="none" stroke="#4338CA" stroke-width="2"/>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">Relational SQL</span>
+              </div>
+              <!-- DBMS Schema -->
+              <div class="tech-icon-item" title="Schema Normalization & Keys">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <rect x="5" y="7" width="28" height="24" rx="2" fill="#F8FAFC" stroke="#047857" stroke-width="2"/>
+                    <line x1="5" y1="14" x2="33" y2="14" stroke="#047857" stroke-width="2"/>
+                    <line x1="16" y1="14" x2="16" y2="31" stroke="#047857" stroke-width="1.5"/>
+                    <circle cx="10.5" cy="10.5" r="1.5" fill="#047857"/>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">Schema 3NF</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2, Col 1: AI / Machine Learning -->
+          <div class="matrix-card">
+            <div class="matrix-card-header">
+              <h3 class="matrix-card-title">AI / Machine Learning</h3>
+              <span class="matrix-card-sub">// CURRENT FOCUS</span>
+            </div>
+            <div class="matrix-icons-row">
+              <!-- Anthropic Claude Code -->
+              <div class="tech-icon-item" title="Claude Code (Anthropic)">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <rect x="3" y="6" width="32" height="26" rx="4" fill="#CC785C"/>
+                    <polygon points="19,10 21.2,16.2 27.5,19 21.2,21.8 19,28 16.8,21.8 10.5,19 16.8,16.2" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">Claude Code</span>
+              </div>
+              <!-- AI Fluency -->
+              <div class="tech-icon-item" title="AI Fluency (Anthropic)">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <circle cx="19" cy="19" r="13.5" fill="#7C3AED" opacity="0.12"/>
+                    <path d="M12 19c0-3.5 2.5-6 6-6s6 2.5 6 6-2.5 6-6 6-6-2.5-6-6z" fill="none" stroke="#7C3AED" stroke-width="2"/>
+                    <circle cx="14" cy="16" r="1.8" fill="#7C3AED"/>
+                    <circle cx="22" cy="16" r="1.8" fill="#7C3AED"/>
+                    <circle cx="18" cy="22" r="1.8" fill="#7C3AED"/>
+                    <line x1="14" y1="16" x2="18" y2="22" stroke="#7C3AED" stroke-width="1.5"/>
+                    <line x1="22" y1="16" x2="18" y2="22" stroke="#7C3AED" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">AI Fluency</span>
+              </div>
+              <!-- AI Concepts -->
+              <div class="tech-icon-item" title="AI Concepts (Infosys)">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <rect x="4" y="6" width="30" height="26" rx="4" fill="#0EA5E9"/>
+                    <circle cx="14" cy="15" r="2.2" fill="#FFFFFF"/>
+                    <circle cx="24" cy="15" r="2.2" fill="#FFFFFF"/>
+                    <path d="M14 24c2 2.5 8 2.5 10 0" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none"/>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">AI Concepts</span>
+              </div>
+              <!-- ML Models -->
+              <div class="tech-icon-item" title="ML Models & Python Tooling">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <rect x="4" y="6" width="30" height="26" rx="4" fill="#EA580C"/>
+                    <circle cx="12" cy="25" r="3" fill="#FFFFFF"/>
+                    <circle cx="20" cy="13" r="3" fill="#FFFFFF"/>
+                    <circle cx="28" cy="21" r="3" fill="#FFFFFF"/>
+                    <line x1="12" y1="25" x2="20" y2="13" stroke="#FFFFFF" stroke-width="1.8"/>
+                    <line x1="20" y1="13" x2="28" y2="21" stroke="#FFFFFF" stroke-width="1.8"/>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">ML Tooling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2, Col 2: Tools & Technologies -->
+          <div class="matrix-card">
+            <div class="matrix-card-header">
+              <h3 class="matrix-card-title">Tools & Technologies</h3>
+              <span class="matrix-card-sub">// EVERYDAY TOOLS</span>
+            </div>
+            <div class="matrix-icons-row">
+              <!-- Git -->
+              <div class="tech-icon-item" title="Git">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <rect x="7" y="7" width="24" height="24" rx="4" transform="rotate(45 19 19)" fill="#F05032"/>
+                    <circle cx="14" cy="19" r="2" fill="#FFFFFF"/>
+                    <circle cx="24" cy="14" r="2" fill="#FFFFFF"/>
+                    <circle cx="24" cy="24" r="2" fill="#FFFFFF"/>
+                    <path d="M14 19h5l5-5m-5 5v5" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">Git</span>
+              </div>
+              <!-- GitHub -->
+              <div class="tech-icon-item" title="GitHub">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <rect x="3" y="6" width="32" height="26" rx="4" fill="#24292E"/>
+                    <path d="M19 10a9 9 0 00-2.85 17.53c.45.08.62-.2.62-.44v-1.54c-2.5.54-3.03-1.2-3.03-1.2-.41-1.04-1-1.32-1-1.32-.82-.56.06-.55.06-.55.9.06 1.38.93 1.38.93.8 1.38 2.1.98 2.62.75.08-.58.31-.98.57-1.2-2-.23-4.1-1-4.1-4.45 0-.98.35-1.79.92-2.42-.09-.23-.4-1.14.09-2.38 0 0 .76-.24 2.48.92a8.6 8.6 0 014.52 0c1.72-1.16 2.48-.92 2.48-.92.49 1.24.18 2.15.09 2.38.58.63.92 1.44.92 2.42 0 3.46-2.1 4.22-4.11 4.44.32.28.61.83.61 1.67v2.48c0 .24.17.53.63.44A9 9 0 0019 10z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">GitHub</span>
+              </div>
+              <!-- VS Code -->
+              <div class="tech-icon-item" title="VS Code">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <path d="M27.5 5.5l-11 10.5-6-4.5L6 14l4.5 5L6 24l4.5 2.5 6-4.5 11 10.5L32 30V8l-4.5-2.5z" fill="#007ACC"/>
+                    <path d="M27.5 8l-8 7.5 8 7.5V8z" fill="#0065A9"/>
+                    <path d="M27.5 5.5l-11 10.5 11 16.5L32 30V8l-4.5-2.5z" fill="#1F9CF0"/>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">VS Code</span>
+              </div>
+              <!-- Terminal -->
+              <div class="tech-icon-item" title="Terminal & Shell">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <rect x="4" y="8" width="30" height="22" rx="3" fill="#1E293B"/>
+                    <line x1="8" y1="15" x2="12" y2="19" stroke="#10B981" stroke-width="2"/>
+                    <line x1="12" y1="19" x2="8" y2="23" stroke="#10B981" stroke-width="2"/>
+                    <line x1="15" y1="23" x2="21" y2="23" stroke="#10B981" stroke-width="2"/>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">Terminal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2, Col 3: Core Concepts -->
+          <div class="matrix-card">
+            <div class="matrix-card-header">
+              <h3 class="matrix-card-title">Core Concepts</h3>
+              <span class="matrix-card-sub">// FUNDAMENTALS</span>
+            </div>
+            <div class="matrix-icons-row">
+              <!-- DSA -->
+              <div class="tech-icon-item" title="Data Structures & Algorithms">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <circle cx="19" cy="9" r="3.5" fill="#4F46E5"/>
+                    <circle cx="10" cy="22" r="3.5" fill="#4F46E5"/>
+                    <circle cx="28" cy="22" r="3.5" fill="#4F46E5"/>
+                    <circle cx="19" cy="30" r="3" fill="#06B6D4"/>
+                    <line x1="19" y1="9" x2="10" y2="22" stroke="#4F46E5" stroke-width="2"/>
+                    <line x1="19" y1="9" x2="28" y2="22" stroke="#4F46E5" stroke-width="2"/>
+                    <line x1="10" y1="22" x2="19" y2="30" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">DSA</span>
+              </div>
+              <!-- OOP -->
+              <div class="tech-icon-item" title="Object-Oriented Programming">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <polygon points="19,5 31,12 19,19 7,12" fill="#818CF8"/>
+                    <polygon points="7,12 19,19 19,33 7,26" fill="#4F46E5"/>
+                    <polygon points="31,12 19,19 19,33 31,26" fill="#6366F1"/>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">OOP</span>
+              </div>
+              <!-- DBMS -->
+              <div class="tech-icon-item" title="Database Management Systems">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <ellipse cx="19" cy="8" rx="12" ry="4" fill="#059669"/>
+                    <path d="M7 8v7c0 2.2 5.4 4 12 4s12-1.8 12-4V8" fill="none" stroke="#059669" stroke-width="2"/>
+                    <path d="M7 15v7c0 2.2 5.4 4 12 4s12-1.8 12-4v-7" fill="none" stroke="#059669" stroke-width="2"/>
+                    <path d="M7 22v7c0 2.2 5.4 4 12 4s12-1.8 12-4v-7" fill="none" stroke="#059669" stroke-width="2"/>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">DBMS</span>
+              </div>
+              <!-- OS / Networks -->
+              <div class="tech-icon-item" title="Operating Systems & Networks">
+                <div class="tech-icon-svg">
+                  <svg viewBox="0 0 38 38" width="36" height="36">
+                    <circle cx="19" cy="19" r="13" fill="none" stroke="#0284C7" stroke-width="2"/>
+                    <ellipse cx="19" cy="19" rx="6" ry="13" fill="none" stroke="#0284C7" stroke-width="1.5"/>
+                    <line x1="6" y1="19" x2="32" y2="19" stroke="#0284C7" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <span class="tech-icon-name">OS &amp; Net</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 4. Bottom Row: 3 Creative Panels (Other Skills, Learning Next, Skill Philosophy) -->
+        <div class="skills-bottom-trio">
+
+          <!-- Bottom Card 1: Other Skills (Torn Note + Soft Skills + Bracket) -->
+          <div class="bottom-trio-card card-other-skills">
+            <div class="trio-card-header">
+              <h4 class="trio-title">Other Skills</h4>
+              <span class="trio-sub">// USEFUL EXTRAS</span>
+            </div>
+            <div class="other-skills-content">
+              <ul class="soft-skills-list">
+                <li>Problem Solving</li>
+                <li>Analytical Thinking</li>
+                <li>Technical Writing &amp; Docs</li>
+                <li>Team Collaboration</li>
+                <li>Adaptability &amp; Curiosity</li>
+                <li>Structured Communication</li>
+              </ul>
+              <div class="soft-skills-bracket-callout">
+                <div class="bracket-symbol" aria-hidden="true">&#125;</div>
+                <div class="bracket-handwriting">
+                  Not just<br>technical &#9786;
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Card 2: Learning Next (Dark Chalkboard Slate with Checkboxes & Lightbulb) -->
+          <div class="bottom-trio-card card-learning-chalkboard" id="chalkboard-learning">
+            <div class="chalkboard-header">
+              <h4 class="chalk-title">Learning Next</h4>
+              <span class="chalk-sub">// ON MY RADAR</span>
+            </div>
+            
+            <div class="chalkboard-checklist">
+              <!-- Item 1: DSA (Checked at top as requested) -->
+              <div class="chalk-check-item checked" data-item="dsa">
+                <span class="chalk-checkbox">&#9745;</span>
+                <span class="chalk-item-text">Data Structures &amp; Algorithms (Advanced DSA)</span>
+              </div>
+              <!-- Item 2: Python Libraries (Checked 2nd as requested) -->
+              <div class="chalk-check-item checked" data-item="python-libs">
+                <span class="chalk-checkbox">&#9745;</span>
+                <span class="chalk-item-text">Python Libraries (NumPy, Pandas &amp; Tooling)</span>
+              </div>
+              <!-- Item 3: System Design (Unchecked as requested) -->
+              <div class="chalk-check-item" data-item="sys-design">
+                <span class="chalk-checkbox">&#9744;</span>
+                <span class="chalk-item-text">System Design &amp; Scalable Architecture</span>
+              </div>
+              <!-- Item 4: AI / ML Concepts (Unchecked as requested) -->
+              <div class="chalk-check-item" data-item="aiml">
+                <span class="chalk-checkbox">&#9744;</span>
+                <span class="chalk-item-text">AI / ML Concepts &amp; Neural Architectures</span>
+              </div>
+              <!-- Item 5: Cloud & DevOps (Unchecked as requested) -->
+              <div class="chalk-check-item" data-item="cloud">
+                <span class="chalk-checkbox">&#9744;</span>
+                <span class="chalk-item-text">Cloud Infrastructure &amp; Modern DevOps</span>
+              </div>
+            </div>
+
+            <!-- Etched Chalk Lightbulb in bottom-right -->
+            <div class="chalk-lightbulb-sketch" aria-hidden="true">
+              <svg viewBox="0 0 48 48" class="chalk-bulb-svg" width="46" height="46">
+                <path d="M18 28h12m-10 4h8m-6 4h4" stroke="#FDE047" stroke-width="2" stroke-linecap="round" fill="none"/>
+                <path d="M16 28c-3-2.5-5-6-5-10 0-7.2 5.8-13 13-13s13 5.8 13 13c0 4-2 7.5-5 10l-2 4H18l-2-4z" stroke="#FDE047" stroke-width="2" stroke-linejoin="round" fill="none"/>
+                <path d="M21 17l3-4 3 4" stroke="#FDE047" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <line x1="24" y1="3" x2="24" y2="0" stroke="#FDE047" stroke-width="1.5" stroke-dasharray="2 2"/>
+                <line x1="12" y1="7" x2="9" y2="4" stroke="#FDE047" stroke-width="1.5" stroke-dasharray="2 2"/>
+                <line x1="36" y1="7" x2="39" y2="4" stroke="#FDE047" stroke-width="1.5" stroke-dasharray="2 2"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Bottom Card 3: Skill Philosophy (Parchment with Mountain Drawing & Arrow) -->
+          <div class="bottom-trio-card card-skill-philosophy">
+            <div class="trio-card-header">
+              <h4 class="trio-title"><span class="asterisk-symbol">&#10038;</span> Skill Philosophy</h4>
+            </div>
+            
+            <div class="philosophy-layout">
+              <div class="philosophy-quote-col">
+                <blockquote class="philosophy-quote">
+                  "I don't believe in being an expert in everything, but I do believe in being a little better today than I was yesterday."
+                </blockquote>
+                <div class="philosophy-author">
+                  <span class="author-name">&mdash; Kunal</span>
+                  <div class="author-sig-line"></div>
+                </div>
+              </div>
+
+              <div class="philosophy-mountain-col">
+                <div class="mountain-sketch-wrapper">
+                  <svg viewBox="0 0 160 90" class="mountain-sketch-svg" width="150" height="85" aria-label="Mountain sketch with flag at summit">
+                    <!-- Mountain Peaks -->
+                    <polygon points="75,20 115,85 35,85" fill="none" stroke="#1E1E23" stroke-width="2" stroke-linejoin="round"/>
+                    <polygon points="120,38 150,85 90,85" fill="none" stroke="#1E1E23" stroke-width="1.8" stroke-linejoin="round"/>
+                    <polygon points="35,42 65,85 5,85" fill="none" stroke="#1E1E23" stroke-width="1.8" stroke-linejoin="round"/>
+                    <!-- Snow caps -->
+                    <path d="M63 42 L75 48 L87 40" fill="none" stroke="#1E1E23" stroke-width="1.5"/>
+                    <path d="M109 54 L120 58 L131 52" fill="none" stroke="#1E1E23" stroke-width="1.2"/>
+                    <!-- Summit Flag -->
+                    <line x1="75" y1="20" x2="75" y2="8" stroke="#1E1E23" stroke-width="1.8"/>
+                    <polygon points="75,8 88,13 75,18" fill="#1E1E23"/>
+                    <!-- Pine trees at base -->
+                    <polygon points="20,72 24,85 16,85" fill="#1E1E23"/>
+                    <polygon points="27,70 31,85 23,85" fill="#1E1E23"/>
+                    <polygon points="135,70 139,85 131,85" fill="#1E1E23"/>
+                    <polygon points="144,73 148,85 140,85" fill="#1E1E23"/>
+                  </svg>
+                  
+                  <div class="mountain-callout-arrow">
+                    <span class="mountain-callout-text">&#8593; Better Skills, Brighter Possibilities</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ======================================================================
+           SECTION 04: PROJECTS & EXPERIMENTS (CRAFTSMAN DOSSIER SPREAD)
+           ====================================================================== -->
+      <section id="work" class="section-full-spread projects-craftsman-section">
+        
+        <!-- Top Meta / Status Bar for Projects (Reference Design Top Header) -->
+        <div class="projects-meta-top-bar">
+          <div class="projects-meta-script">
+            "Turning ideas into real things."
+          </div>
+          <div class="projects-meta-lead">
+            A COMPUTER SCIENCE STUDENT &bull; EXPLORING AI, SOFTWARE AND REAL-WORLD PROBLEMS.
+          </div>
+          <div class="projects-meta-tags">
+            <span>IDEAS</span>
+            <span>CODE</span>
+            <span>BUILD</span>
+            <span>LEARN</span>
+            <span class="meta-dot-symbol">&#9679;</span>
+          </div>
+        </div>
+
+        <!-- Section Header Bar (Reference Layout) -->
+        <div class="projects-header-block">
+          <div class="projects-header-left">
+            <span class="projects-sec-tag">04</span>
+            <div class="projects-title-wrap">
+              <h2 class="projects-main-title">Projects</h2>
+              <div class="highlight-yellow-stroke" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <div class="projects-header-divider" aria-hidden="true"></div>
+
+          <div class="projects-header-handwriting">
+            <p>Some work.<br>Some experiments.<br>A lot of learning.</p>
+            <svg class="handwritten-arrow-svg" viewBox="0 0 45 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 8 C 18 4, 32 10, 36 22" stroke="#2B2B32" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M28 22 L 36 22 L 36 14" stroke="#2B2B32" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <div class="projects-header-divider" aria-hidden="true"></div>
+
+          <div class="projects-header-desc">
+            A collection of projects I've built &mdash; from solving real problems to just exploring ideas. Each project has taught me something, whether it worked perfectly or completely broke.
+          </div>
+
+          <!-- Tilted Stamped Badge -->
+          <div class="projects-tilted-stamp" aria-label="Built Learned Moved Forward">
+            <div class="stamp-inner-text">
+              <span>BUILT</span>
+              <span>LEARNED</span>
+              <span>MOVED FORWARD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- NOTE: Classification section at top is EXPLICITLY OMITTED per user request! -->
+
+        <!-- The 3 Horizontal Project Rows -->
+        <div class="projects-horizontal-list">
+
+          <!-- ==================== PROJECT 01 ==================== -->
+          <div class="project-dossier-row">
+            <!-- Left Margin Index & Scribble Column -->
+            <div class="row-margin-col">
+              <div class="row-num">01</div>
+              <div class="row-num-line"></div>
+              <div class="row-margin-scribble">
+                <span>Learning<br>made<br>personal.</span>
+                <svg viewBox="0 0 30 25" fill="none" class="margin-scribble-arrow">
+                  <path d="M6 4 C 18 4, 24 12, 22 20" stroke="#2B2B32" stroke-width="1.4" stroke-linecap="round"/>
+                  <path d="M14 20 L 22 20 L 22 12" stroke="#2B2B32" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Main Project Card Container -->
+            <article class="project-dossier-card">
+              
+              <!-- Zone 1: Interactive / Rich UI Preview Frame -->
+              <div class="card-preview-zone">
+                <div class="ui-mockup-window dark-workbench-theme">
+                  <div class="mockup-window-header">
+                    <div class="mockup-brand">
+                      <span class="mockup-logo-mark">&#9679;</span>
+                      <span class="mockup-logo-text">DataDiscovery</span>
+                    </div>
+                    <div class="mockup-nav-links">
+                      <span>Features</span>
+                      <span>Datasets</span>
+                      <span>Insights</span>
+                    </div>
+                    <div class="mockup-header-btn">Sign in</div>
+                  </div>
+
+                  <div class="mockup-body-content">
+                    <h4 class="mockup-hero-title">Discover <span class="mockup-title-accent">Without Limits</span></h4>
+                    <p class="mockup-hero-sub">Personalized learning &bull; Smarter practice &bull; Better you.</p>
+                    
+                    <div class="mockup-cta-group">
+                      <div class="mockup-btn-primary">Get Started</div>
+                      <div class="mockup-btn-secondary">Watch Demo</div>
+                    </div>
+
+                    <div class="mockup-metrics-row">
+                      <div class="mockup-metric-item">
+                        <span class="metric-val">10K+</span>
+                        <span class="metric-lbl">Active Learners</span>
+                      </div>
+                      <div class="mockup-metric-item">
+                        <span class="metric-val">500+</span>
+                        <span class="metric-lbl">Practice Questions</span>
+                      </div>
+                      <div class="mockup-metric-item">
+                        <span class="metric-val">95%</span>
+                        <span class="metric-lbl">Positive Feedback</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Zone 2: Project Details, Chips & Action Buttons -->
+              <div class="card-details-zone">
+                <div class="project-title-wrapper">
+                  <h3 class="card-project-title">Intelligent Data Discovery</h3>
+                  <div class="brush-highlight brush-yellow" aria-hidden="true"></div>
+                </div>
+                
+                <div class="card-project-subtitle">
+                  AI-Powered Data Mining &amp; Insight Platform
+                </div>
+
+                <p class="card-project-desc">
+                  An end-to-end automated platform that adapts exploratory data science to your datasets, extracts hidden correlations, recommends ML models, and tracks analytical health scores.
+                </p>
+
+                <div class="card-tech-chips-row">
+                  <span class="craft-chip">Python</span>
+                  <span class="craft-chip">Pandas</span>
+                  <span class="craft-chip">Scikit-Learn</span>
+                  <span class="craft-chip">NLP</span>
+                  <span class="craft-chip">PCA / K-Means</span>
+                  <span class="craft-chip">Chart.js</span>
+                </div>
+
+                <div class="card-actions-row">
+                  <a href="javascript:void(0)" class="btn-view-live" title="Live Preview">
+                    <span>View Live</span>
+                    <span class="btn-arrow">&#8599;</span>
+                  </a>
+                  <a href="https://github.com/Kunalkumar93/datascience_project" target="_blank" rel="noopener noreferrer" class="btn-source-code" title="View Source Code on GitHub">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                    </svg>
+                    <span>Source Code</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Zone 3: What I Learned & Meta & Mountain Doodle -->
+              <div class="card-reflections-zone">
+                <div class="reflections-top-meta">
+                  <span class="status-pill completed">
+                    <span class="status-green-dot"></span>
+                    COMPLETED
+                  </span>
+                  <span class="card-date-stamp">JAN 2026</span>
+                </div>
+
+                <div class="reflections-content-split">
+                  <div class="learned-col">
+                    <h4 class="learned-heading">What I Learned</h4>
+                    <ul class="learned-bullets">
+                      <li>Automated 0–100 data health profiling &amp; metrics</li>
+                      <li>Dynamic algorithm suitability scoring &amp; pipelines</li>
+                      <li>Designing responsive glassmorphic analytics UI</li>
+                    </ul>
+                    <!-- Discreet AI note (low-contrast, secondary) -->
+                    <div class="learned-ai-subtle">
+                      <span class="ai-spark">&#9889;</span>
+                      <span>AI Workflow: Prompt scaffolding &amp; heuristic rule tuning</span>
+                    </div>
+                  </div>
+
+                  <div class="doodle-reflection-col">
+                    <div class="handwritten-doodle-quote">
+                      "Turned a side idea into a full project."
+                    </div>
+                    <!-- Mountain Range Doodle SVG -->
+                    <div class="reflection-doodle-svg-wrap">
+                      <svg viewBox="0 0 130 65" class="doodle-mountain-svg" aria-hidden="true">
+                        <polygon points="65,12 95,58 35,58" fill="none" stroke="#2B2B32" stroke-width="1.6" stroke-linejoin="round"/>
+                        <polygon points="95,22 122,60 72,60" fill="none" stroke="#2B2B32" stroke-width="1.4" stroke-linejoin="round"/>
+                        <polygon points="35,26 62,60 8,60" fill="none" stroke="#2B2B32" stroke-width="1.4" stroke-linejoin="round"/>
+                        <path d="M54 28 L65 34 L76 27" fill="none" stroke="#2B2B32" stroke-width="1.2"/>
+                        <path d="M85 36 L95 40 L105 34" fill="none" stroke="#2B2B32" stroke-width="1"/>
+                        <path d="M22 40 L35 44 L46 38" fill="none" stroke="#2B2B32" stroke-width="1"/>
+                        <line x1="65" y1="12" x2="65" y2="56" stroke="#2B2B32" stroke-width="1.1"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </article>
+          </div>
+
+          <!-- ==================== PROJECT 02 ==================== -->
+          <div class="project-dossier-row">
+            <!-- Left Margin Index & Scribble Column -->
+            <div class="row-margin-col">
+              <div class="row-num">02</div>
+              <div class="row-num-line"></div>
+              <div class="row-margin-scribble">
+                <span>Small<br>steps toward<br>a better<br>feed.</span>
+                <svg viewBox="0 0 30 25" fill="none" class="margin-scribble-arrow">
+                  <path d="M6 4 C 18 4, 24 12, 22 20" stroke="#2B2B32" stroke-width="1.4" stroke-linecap="round"/>
+                  <path d="M14 20 L 22 20 L 22 12" stroke="#2B2B32" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Main Project Card Container -->
+            <article class="project-dossier-card">
+              
+              <!-- Zone 1: Interactive / Rich UI Preview Frame -->
+              <div class="card-preview-zone">
+                <div class="ui-mockup-window light-split-theme">
+                  <div class="mockup-window-header light-header">
+                    <div class="mockup-brand">
+                      <span class="mockup-logo-mark brand-red">&#9654;</span>
+                      <span class="mockup-logo-text dark-text">InstaTube</span>
+                    </div>
+                    <div class="mockup-nav-links dark-text">
+                      <span>Stories</span>
+                      <span>Reels</span>
+                      <span>NetTube Mode</span>
+                    </div>
+                    <div class="mockup-header-btn btn-coral">Switch</div>
+                  </div>
+
+                  <div class="mockup-body-content light-body-split">
+                    <div class="mockup-stories-tray">
+                      <div class="story-circle active-gradient"><span class="story-avatar">&#128104;&#8205;&#128187;</span></div>
+                      <div class="story-circle active-gradient"><span class="story-avatar">&#127918;</span></div>
+                      <div class="story-circle active-gradient"><span class="story-avatar">&#127916;</span></div>
+                      <div class="story-circle active-gradient"><span class="story-avatar">&#9881;&#65039;</span></div>
+                    </div>
+
+                    <div class="mockup-feed-card">
+                      <div class="feed-card-top">
+                        <span class="feed-author">&#9679; Veritasium &bull; <small>2h ago</small></span>
+                        <span class="feed-dots">&bull;&bull;&bull;</span>
+                      </div>
+                      <div class="feed-video-preview">
+                        <div class="heart-burst-animation" aria-hidden="true">&#10084;&#65039;</div>
+                        <span class="feed-play-icon">&#9658;</span>
+                      </div>
+                      <div class="feed-action-bar">
+                        <span class="action-icon">&#10084;&#65039;</span>
+                        <span class="action-icon">&#128172;</span>
+                        <span class="action-icon">&#10148;</span>
+                        <span class="action-icon push-right">&#128278;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Zone 2: Project Details, Chips & Action Buttons -->
+              <div class="card-details-zone">
+                <div class="project-title-wrapper">
+                  <h3 class="card-project-title">InstaTube &amp; NetTube</h3>
+                  <div class="brush-highlight brush-peach" aria-hidden="true"></div>
+                </div>
+                
+                <div class="card-project-subtitle">
+                  Dynamic YouTube UI Extension
+                </div>
+
+                <p class="card-project-desc">
+                  A lightweight, zero-bloat Chrome extension that restyles your entire YouTube browsing experience into pixel-perfect Instagram or Netflix interfaces using YouTube's real data.
+                </p>
+
+                <div class="card-tech-chips-row">
+                  <span class="craft-chip">JavaScript</span>
+                  <span class="craft-chip">Chrome MV3</span>
+                  <span class="craft-chip">CSS3 Animations</span>
+                  <span class="craft-chip">DOM Injection</span>
+                  <span class="craft-chip">MutationObserver</span>
+                </div>
+
+                <div class="card-actions-row">
+                  <a href="javascript:void(0)" class="btn-view-live" title="Live Preview">
+                    <span>View Live</span>
+                    <span class="btn-arrow">&#8599;</span>
+                  </a>
+                  <a href="https://github.com/Kunalkumar93/Instatube_Nettube" target="_blank" rel="noopener noreferrer" class="btn-source-code" title="View Source Code on GitHub">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                    </svg>
+                    <span>Source Code</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Zone 3: What I Learned & Meta & Botanical Sprout Doodle -->
+              <div class="card-reflections-zone">
+                <div class="reflections-top-meta">
+                  <span class="status-pill completed">
+                    <span class="status-green-dot"></span>
+                    COMPLETED
+                  </span>
+                  <span class="card-date-stamp">FEB 2026</span>
+                </div>
+
+                <div class="reflections-content-split">
+                  <div class="learned-col">
+                    <h4 class="learned-heading">What I Learned</h4>
+                    <ul class="learned-bullets">
+                      <li>Non-invasive MutationObserver DOM injection</li>
+                      <li>Chrome Extension MV3 message passing</li>
+                      <li>Zero-bloat reactive CSS animations</li>
+                    </ul>
+                    <!-- Discreet AI note (low-contrast, secondary) -->
+                    <div class="learned-ai-subtle">
+                      <span class="ai-spark">&#9889;</span>
+                      <span>AI Workflow: DOM selector reverse-engineering &amp; CSS styling</span>
+                    </div>
+                  </div>
+
+                  <div class="doodle-reflection-col">
+                    <div class="handwritten-doodle-quote">
+                      "Progress over perfection."
+                    </div>
+                    <!-- Botanical Sprout Doodle SVG -->
+                    <div class="reflection-doodle-svg-wrap">
+                      <svg viewBox="0 0 85 75" class="doodle-sprout-svg" aria-hidden="true">
+                        <path d="M42 70 C 42 45, 45 25, 42 5" fill="none" stroke="#2B2B32" stroke-width="1.6" stroke-linecap="round"/>
+                        <path d="M42 48 C 30 46, 18 36, 16 26 C 26 24, 38 34, 42 48 Z" fill="none" stroke="#2B2B32" stroke-width="1.4"/>
+                        <path d="M42 32 C 54 30, 66 20, 68 10 C 58 8, 46 18, 42 32 Z" fill="none" stroke="#2B2B32" stroke-width="1.4"/>
+                        <path d="M42 16 C 34 14, 26 8, 25 2 C 32 0, 39 8, 42 16 Z" fill="none" stroke="#2B2B32" stroke-width="1.2"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </article>
+          </div>
+
+          <!-- ==================== PROJECT 03 ==================== -->
+          <div class="project-dossier-row">
+            <!-- Left Margin Index & Scribble Column -->
+            <div class="row-margin-col">
+              <div class="row-num">03</div>
+              <div class="row-num-line"></div>
+              <div class="row-margin-scribble">
+                <span>Because<br>sometimes<br>code is just<br>fun. ⤹</span>
+              </div>
+            </div>
+
+            <!-- Main Project Card Container -->
+            <article class="project-dossier-card">
+              
+              <!-- Zone 1: Interactive / Rich UI Preview Frame -->
+              <div class="card-preview-zone">
+                <div class="ui-mockup-window pixel-retro-theme">
+                  <div class="mockup-window-header retro-header">
+                    <div class="mockup-window-dots">
+                      <span class="win-dot red"></span>
+                      <span class="win-dot yellow"></span>
+                      <span class="win-dot green"></span>
+                    </div>
+                    <span class="retro-title">academic_records.sql</span>
+                    <span class="retro-status">ACID ●</span>
+                  </div>
+
+                  <div class="mockup-body-content retro-body">
+                    <div class="retro-query-box">
+                      <span class="sql-kw">SELECT</span> student_id, name, gpa, major<br>
+                      <span class="sql-kw">FROM</span> academic_registry<br>
+                      <span class="sql-kw">JOIN</span> department_schema <span class="sql-kw">USING</span>(dept_id)<br>
+                      <span class="sql-kw">WHERE</span> semester = <span class="sql-num">3</span> <span class="sql-kw">AND</span> status = <span class="sql-str">'Active'</span>;
+                    </div>
+
+                    <div class="retro-results-bar">
+                      <span class="result-badge">⚡ 0.42ms execution</span>
+                      <span class="result-badge">3NF Normalized</span>
+                      <span class="result-badge">2,450 records</span>
+                    </div>
+
+                    <div class="retro-mini-table">
+                      <div class="retro-table-row header">
+                        <span>ID</span><span>NAME</span><span>SEM</span><span>STATUS</span>
+                      </div>
+                      <div class="retro-table-row">
+                        <span>12501</span><span>K. Kumar</span><span>3</span><span class="tag-ok">PASS</span>
+                      </div>
+                      <div class="retro-table-row">
+                        <span>12502</span><span>A. Sharma</span><span>3</span><span class="tag-ok">PASS</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Zone 2: Project Details, Chips & Action Buttons -->
+              <div class="card-details-zone">
+                <div class="project-title-wrapper">
+                  <h3 class="card-project-title">ORBIS &mdash; Academic SQL Engine</h3>
+                  <div class="brush-highlight brush-mint" aria-hidden="true"></div>
+                </div>
+                
+                <div class="card-project-subtitle">
+                  3NF Relational Database &amp; Query Optimizer
+                </div>
+
+                <p class="card-project-desc">
+                  A normalized relational database system and query execution engine built for high-throughput academic records management with strict ACID compliance.
+                </p>
+
+                <div class="card-tech-chips-row">
+                  <span class="craft-chip">MySQL</span>
+                  <span class="craft-chip">SQLite</span>
+                  <span class="craft-chip">Relational SQL</span>
+                  <span class="craft-chip">HTML/CSS</span>
+                  <span class="craft-chip">ACID</span>
+                </div>
+
+                <div class="card-actions-row">
+                  <a href="javascript:void(0)" class="btn-view-live" title="Live Preview">
+                    <span>View Live</span>
+                    <span class="btn-arrow">&#8599;</span>
+                  </a>
+                  <a href="https://github.com/Kunalkumar93" target="_blank" rel="noopener noreferrer" class="btn-source-code" title="View Source Code on GitHub">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                    </svg>
+                    <span>Source Code</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Zone 3: What I Learned & Meta & Controller Doodle -->
+              <div class="card-reflections-zone">
+                <div class="reflections-top-meta">
+                  <span class="status-pill completed">
+                    <span class="status-green-dot"></span>
+                    COMPLETED
+                  </span>
+                  <span class="card-date-stamp">MAR 2026</span>
+                </div>
+
+                <div class="reflections-content-split">
+                  <div class="learned-col">
+                    <h4 class="learned-heading">What I Learned</h4>
+                    <ul class="learned-bullets">
+                      <li>3NF normalization &amp; relational integrity</li>
+                      <li>Query planning, joins &amp; B-tree indexing</li>
+                      <li>ACID transactional consistency guarantees</li>
+                    </ul>
+                    <!-- Discreet AI note (low-contrast, secondary) -->
+                    <div class="learned-ai-subtle">
+                      <span class="ai-spark">&#9889;</span>
+                      <span>AI Workflow: Index optimization trade-offs &amp; schema tests</span>
+                    </div>
+                  </div>
+
+                  <div class="doodle-reflection-col">
+                    <div class="handwritten-doodle-quote">
+                      "A fun break from the serious stuff."
+                    </div>
+                    <!-- Retro Controller / Gadget Doodle SVG -->
+                    <div class="reflection-doodle-svg-wrap">
+                      <svg viewBox="0 0 95 65" class="doodle-controller-svg" aria-hidden="true">
+                        <path d="M18 18 C 30 14, 65 14, 77 18 C 88 22, 92 42, 85 52 C 78 62, 68 56, 62 42 C 55 38, 40 38, 33 42 C 27 56, 17 62, 10 52 C 3 42, 7 22, 18 18 Z" fill="none" stroke="#2B2B32" stroke-width="1.6" stroke-linejoin="round"/>
+                        <path d="M22 26 L22 36 M17 31 L27 31" stroke="#2B2B32" stroke-width="2.2" stroke-linecap="round"/>
+                        <circle cx="70" cy="27" r="2.5" fill="#2B2B32"/>
+                        <circle cx="78" cy="33" r="2.5" fill="#2B2B32"/>
+                        <line x1="42" y1="31" x2="46" y2="31" stroke="#2B2B32" stroke-width="1.4" stroke-linecap="round"/>
+                        <line x1="49" y1="31" x2="53" y2="31" stroke="#2B2B32" stroke-width="1.4" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </article>
+          </div>
+
+        </div>
+
+        <!-- Bottom Transfer Option to GitHub (Matching Reference Design) -->
+        <div class="projects-bottom-transfer-bar">
+          <div class="transfer-left">
+            <span class="transfer-arrow">&rarr;</span>
+            <span class="transfer-text">More projects coming soon... or explore my full repository vault on</span>
+            <a href="https://github.com/Kunalkumar93" target="_blank" rel="noopener noreferrer" class="transfer-github-link">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+              </svg>
+              <span>GitHub &rarr;</span>
+            </a>
+          </div>
+
+          <div class="transfer-right">
+            <span class="transfer-divider-line"></span>
+            <span class="transfer-slogan">SAME CURIOSITY, BIGGER IDEAS.</span>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ======================================================================
+           SECTION 05: EDUCATION & WORK EXPERIENCE (Directory + Playing Card Deck)
+           ====================================================================== -->
+      <section id="education" class="section-full-spread journey-playcard-spread">
+        <div class="section-header-bar">
+          <div>
+            <span class="case-id-tag">// ACADEMIC & PRACTICAL MILESTONES</span>
+            <h2 class="section-headline">Education & Experience Chronicle</h2>
+          </div>
+          <div class="section-caption">
+            SELECT EVENT TO DRAW PLAYING CARD &bull; 01 &mdash; 06
+          </div>
+        </div>
+
+        <div class="journey-card-layout">
+          
+          <!-- LEFT SIDE: Interactive Directory / Milestone List -->
+          <div class="journey-directory-col">
+            <div class="journey-filter-tabs" role="tablist">
+              <button class="filter-tab-btn" data-filter="all">All Events</button>
+              <button class="filter-tab-btn active" data-filter="education">Education</button>
+              <button class="filter-tab-btn" data-filter="experience">Work & Training</button>
+            </div>
+
+            <div class="journey-events-list">
+              <!-- Item 01: LPU B.Tech -->
+              <div class="journey-event-item active" data-index="0" data-category="education">
+                <div class="event-meta-line">
+                  <span class="event-type-badge">HIGHER EDUCATION</span>
+                  <span class="event-date-stamp">2025 &mdash; 2029</span>
+                </div>
+                <h4 class="event-title">Lovely Professional University</h4>
+                <div class="event-sub-info">
+                  <span>B.Tech in Computer Science & Engineering</span>
+                  <span class="event-arrow">&rarr;</span>
+                </div>
+              </div>
+
+              <!-- Item 02: Anthropic Claude Code & AI Fluency -->
+              <div class="journey-event-item" data-index="1" data-category="experience" style="display: none;">
+                <div class="event-meta-line">
+                  <span class="event-type-badge">APPLIED TRAINING</span>
+                  <span class="event-date-stamp">2026</span>
+                </div>
+                <h4 class="event-title">Anthropic &bull; Claude Code in Action</h4>
+                <div class="event-sub-info">
+                  <span>Agentic Workflows & AI Fluency for Students</span>
+                  <span class="event-arrow">&rarr;</span>
+                </div>
+              </div>
+
+              <!-- Item 03: JP Plus Two High School (Class XII) -->
+              <div class="journey-event-item" data-index="2" data-category="education">
+                <div class="event-meta-line">
+                  <span class="event-type-badge">INTERMEDIATE (BSEB)</span>
+                  <span class="event-date-stamp">COMPLETED 2024</span>
+                </div>
+                <h4 class="event-title">JP Plus Two High School</h4>
+                <div class="event-sub-info">
+                  <span>Class XII &mdash; Science / PCM Stream</span>
+                  <span class="event-arrow">&rarr;</span>
+                </div>
+              </div>
+
+              <!-- Item 04: RPS Public School (Class X) -->
+              <div class="journey-event-item" data-index="3" data-category="education">
+                <div class="event-meta-line">
+                  <span class="event-type-badge">MATRICULATION (CBSE)</span>
+                  <span class="event-date-stamp">COMPLETED 2022</span>
+                </div>
+                <h4 class="event-title">RPS Public School</h4>
+                <div class="event-sub-info">
+                  <span>Secondary Education (Class X)</span>
+                  <span class="event-arrow">&rarr;</span>
+                </div>
+              </div>
+
+              <!-- Item 05: Infosys Springboard AI -->
+              <div class="journey-event-item" data-index="4" data-category="experience" style="display: none;">
+                <div class="event-meta-line">
+                  <span class="event-type-badge">FOUNDATIONAL TRAINING</span>
+                  <span class="event-date-stamp">2026</span>
+                </div>
+                <h4 class="event-title">Infosys Springboard</h4>
+                <div class="event-sub-info">
+                  <span>Introduction to Artificial Intelligence</span>
+                  <span class="event-arrow">&rarr;</span>
+                </div>
+              </div>
+
+              <!-- Item 06: Open Source & Algorithmic Practice -->
+              <div class="journey-event-item" data-index="5" data-category="experience" style="display: none;">
+                <div class="event-meta-line">
+                  <span class="event-type-badge">INDEPENDENT BUILDER</span>
+                  <span class="event-date-stamp">ONGOING</span>
+                </div>
+                <h4 class="event-title">Algorithmic Problem Practice</h4>
+                <div class="event-sub-info">
+                  <span>LeetCode &bull; GitHub Repos & Structured Schemas</span>
+                  <span class="event-arrow">&rarr;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE: The "Play Card" / Collector's Dossier Deck -->
+          <div class="journey-card-display-col">
+            
+            <div class="playcard-container" id="journey-playcard">
+              <!-- Corner Suit Index Top-Left -->
+              <div class="card-suit-corner top-left">
+                <span class="card-suit-symbol" id="card-suit-symbol-tl">♠</span>
+                <span class="card-suit-number" id="card-suit-number-tl">01</span>
+              </div>
+
+              <!-- Card Inner Canvas -->
+              <div class="playcard-body">
+                <div class="playcard-header-badge">
+                  <span class="playcard-badge-tag" id="playcard-type-tag">HIGHER EDUCATION</span>
+                  <span class="playcard-status-pill" id="playcard-status-pill">IN PROGRESS</span>
+                </div>
+
+                <h3 class="playcard-title" id="playcard-title">Lovely Professional University</h3>
+                
+                <div class="playcard-role-meta">
+                  <span class="playcard-role" id="playcard-role">Bachelor of Technology in Computer Science & Engineering</span>
+                  <span class="playcard-location" id="playcard-location">📍 Phagwara, Punjab &bull; 2025 &mdash; 2029</span>
+                </div>
+
+                <div class="playcard-divider"></div>
+
+                <div class="playcard-focus-block">
+                  <span class="playcard-label">CORE FOCUS & CURRICULUM:</span>
+                  <p class="playcard-focus-text" id="playcard-focus-text">
+                    Core Software Engineering, Data Structures & Algorithms, Object-Oriented Systems, Database Architecture, and System Foundations.
+                  </p>
+                </div>
+
+                <div class="playcard-highlights-block">
+                  <span class="playcard-label">KEY MILESTONES & TAKEAWAYS:</span>
+                  <ul class="playcard-bullets" id="playcard-bullets">
+                    <li>Building strong foundational mastery across C, C++, and Python programming.</li>
+                    <li>Active algorithmic problem solving and DSA consistency on LeetCode.</li>
+                    <li>Developing modern responsive web architectures and normalized relational databases.</li>
+                  </ul>
+                </div>
+
+                <div class="playcard-quote-box">
+                  <span class="playcard-quote-text" id="playcard-quote-text">
+                    "Engineering the mathematical and computational bedrock for resilient systems."
+                  </span>
+                </div>
+
+                <div class="playcard-seal-stamp" id="playcard-seal-stamp">
+                  VERIFIED RECORD &bull; KUNAL KUMAR
+                </div>
+              </div>
+
+              <!-- Corner Suit Index Bottom-Right (Rotated) -->
+              <div class="card-suit-corner bottom-right">
+                <span class="card-suit-symbol" id="card-suit-symbol-br">♠</span>
+                <span class="card-suit-number" id="card-suit-number-br">01</span>
+              </div>
+            </div>
+
+            <!-- Card Deck Controls -->
+            <div class="playcard-deck-controls">
+              <button class="deck-nav-btn" id="btn-prev-card" title="Previous Card">&larr; Prev Card</button>
+              <div class="deck-counter-indicator" id="deck-counter">CARD 1 OF 3</div>
+              <button class="deck-nav-btn" id="btn-next-card" title="Next Card">Next Card &rarr;</button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Desk Artifacts Row: Pinned Sketch & Yellow Sticky Note -->
+        <div class="journey-desk-artifacts">
+          <div class="blueprint-paper-frame">
+            <img src="assets/sketch.jpg" alt="Architectural study wireframe sketch">
+            <div class="blueprint-scribble">Bigger Ideas Ahead &rarr;</div>
+          </div>
+
+          <div class="sticky-note-desk" id="desk-sticky-note">
+            <div class="sticky-note-pin" aria-hidden="true"></div>
+            <div class="sticky-note-text">
+              Good Ideas Take Time. &#128578;
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ======================================================================
+           SECTION 06: CONTACT & COLLABORATION (CRAFTSMAN DOSSIER SPREAD)
+           ====================================================================== -->
+      <section id="contact" class="section-full-spread contact-craftsman-section">
+        
+        <!-- Top Meta / Status Bar for Contact -->
+        <div class="contact-meta-top-bar">
+          <div class="contact-meta-left">
+            <span class="meta-caps-label">LET'S CONNECT</span>
+            <span class="meta-slash">//</span>
+            <span class="meta-tagline">IDEAS &bull; OPPORTUNITIES &bull; COLLABORATIONS &bull; JUST A HELLO</span>
+          </div>
+
+          <div class="contact-meta-center">
+            <span class="contact-sec-index-badge">06</span>
+          </div>
+
+          <div class="contact-meta-right">
+            <span>SAME CURIOSITY.</span>
+            <span>DIFFERENT CONVERSATIONS.</span>
+            <span>A BRIGHTER TOMORROW.</span>
+          </div>
+        </div>
+
+        <!-- Upper Section Split: Headline + Studio Photo Frame -->
+        <div class="contact-hero-split">
+          
+          <!-- Left Column: Headline, Handwriting & Lead Paragraph -->
+          <div class="contact-hero-left">
+            <div class="contact-margin-handwriting">
+              <p>Ideas, suggestions,<br>opportunities or<br>just a friendly hello &mdash;<br>my inbox is always open. &#9786;</p>
+              <svg class="handwritten-curve-arrow-svg" viewBox="0 0 50 35" fill="none" aria-hidden="true">
+                <path d="M6 6 C 24 4, 38 16, 42 28" stroke="#2B2B32" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M32 28 L 42 28 L 42 18" stroke="#2B2B32" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <div class="contact-headline-wrap">
+              <h2 class="contact-main-headline">
+                Let's<br>
+                Build Something<br>
+                <span class="highlight-wrapper">
+                  <span class="highlight-text">Meaningful.</span>
+                  <span class="highlight-brush-contact" aria-hidden="true"></span>
+                </span>
+              </h2>
+            </div>
+
+            <p class="contact-lead-desc">
+              I'm always excited to meet new people, work on interesting projects, or simply have a conversation about technology, ideas or the future. Feel free to reach out through any of the platforms below or drop a direct message.
+            </p>
+          </div>
+
+          <!-- Right Column: Tilted Studio Photo Frame with Washi Tape -->
+          <div class="contact-hero-right">
+            <div class="workspace-polaroid-frame">
+              <!-- Masking / Washi Tape on Top -->
+              <div class="washi-tape-strip" aria-hidden="true"></div>
+
+              <div class="workspace-photo-container">
+                <img src="assets/contact_workspace.jpg" alt="Kunal's cozy developer workspace with Good People Build Great Things laptop and books">
+              </div>
+
+              <div class="workspace-caption-handwriting">
+                My workspace &mdash; where ideas turn into plans.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Lower Section Split: 6 Grid Contact Cards + Mountains vs Torn Spiral Notepad -->
+        <div class="contact-main-split-layout">
+          
+          <!-- LEFT SIDE: 6 Contact Cards + Mountain Pine Landscape -->
+          <div class="contact-cards-and-landscape-col">
+            
+            <!-- 6 Grid Cards (3 Cols x 2 Rows) -->
+            <div class="contact-cards-grid">
+              
+              <!-- Card 1: Email -->
+              <div class="contact-tile-card" data-copy="kunalkrps177@gmail.com">
+                <div class="tile-top-row">
+                  <div class="tile-title-group">
+                    <svg class="tile-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                    <span class="tile-name">Email</span>
+                  </div>
+                  <span class="tile-arrow-link">&rarr;</span>
+                </div>
+                <p class="tile-subtext">For opportunities, collaborations or just a hello.</p>
+                <div class="tile-pill-btn pill-peach">
+                  <span class="pill-address">kunalkrps177@gmail.com</span>
+                  <button type="button" class="btn-copy-icon" title="Copy Email" aria-label="Copy Email">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Card 2: GitHub -->
+              <a href="https://github.com/Kunalkumar93" target="_blank" rel="noopener noreferrer" class="contact-tile-card" data-copy="https://github.com/Kunalkumar93">
+                <div class="tile-top-row">
+                  <div class="tile-title-group">
+                    <svg class="tile-icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                    </svg>
+                    <span class="tile-name">GitHub</span>
+                  </div>
+                  <span class="tile-arrow-link">&rarr;</span>
+                </div>
+                <p class="tile-subtext">Check out my projects and code.</p>
+                <div class="tile-pill-btn pill-grey">
+                  <span class="pill-address">github.com/Kunalkumar93</span>
+                  <button type="button" class="btn-copy-icon" title="Copy Link" aria-label="Copy GitHub Link">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </button>
+                </div>
+              </a>
+
+              <!-- Card 3: LinkedIn -->
+              <a href="https://linkedin.com/in/kunal-kumar-38729737b" target="_blank" rel="noopener noreferrer" class="contact-tile-card" data-copy="https://linkedin.com/in/kunal-kumar-38729737b">
+                <div class="tile-top-row">
+                  <div class="tile-title-group">
+                    <svg class="tile-icon-svg" viewBox="0 0 24 24" fill="#0A66C2">
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                    <span class="tile-name">LinkedIn</span>
+                  </div>
+                  <span class="tile-arrow-link">&rarr;</span>
+                </div>
+                <p class="tile-subtext">Let's connect professionally.</p>
+                <div class="tile-pill-btn pill-blue">
+                  <span class="pill-address">linkedin.com/in/kunal-kumar-38729737b</span>
+                  <button type="button" class="btn-copy-icon" title="Copy Link" aria-label="Copy LinkedIn Link">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </button>
+                </div>
+              </a>
+
+              <!-- Card 4: X (Twitter) -->
+              <div class="contact-tile-card" data-copy="https://x.com">
+                <div class="tile-top-row">
+                  <div class="tile-title-group">
+                    <svg class="tile-icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                    <span class="tile-name">X (Twitter)</span>
+                  </div>
+                  <span class="tile-arrow-link">&rarr;</span>
+                </div>
+                <p class="tile-subtext">Tech, thoughts and random ideas.</p>
+                <div class="tile-pill-btn pill-green">
+                  <span class="pill-address">x.com/kunal</span>
+                  <button type="button" class="btn-copy-icon" title="Copy Link" aria-label="Copy X Link">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Card 5: LeetCode (In place of Discord as requested) -->
+              <a href="https://leetcode.com/u/kunalkr1773/" target="_blank" rel="noopener noreferrer" class="contact-tile-card" data-copy="https://leetcode.com/u/kunalkr1773/">
+                <div class="tile-top-row">
+                  <div class="tile-title-group">
+                    <svg class="tile-icon-svg" viewBox="0 0 24 24" fill="#FFA116">
+                      <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 4.977 3.51c.328.01.656-.008.977-.054a5.88 5.88 0 0 0 2.083-.758l8.28-5.32a1.378 1.378 0 0 0 .548-1.558 1.38 1.38 0 0 0-1.327-.978h-6.22l5.77-5.77a1.377 1.377 0 0 0 0-1.947L14.444.438A1.372 1.372 0 0 0 13.483 0zm-2.91 7.29 4.35 4.35H8.448l2.125-4.35zM4.148 13.916a2.83 2.83 0 0 1 .15-1.04 2.8 2.8 0 0 1 .72-1.12l3.41-3.64-1.57 3.22a1.38 1.38 0 0 0 .28 1.54 1.38 1.38 0 0 0 1.54.28l4.49-2.18-5.88 3.78a2.91 2.91 0 0 1-1.04.38 2.94 2.94 0 0 1-2.1-1.22z"/>
+                    </svg>
+                    <span class="tile-name">LeetCode</span>
+                  </div>
+                  <span class="tile-arrow-link">&rarr;</span>
+                </div>
+                <p class="tile-subtext">DSA problem solving &amp; algorithmic practice.</p>
+                <div class="tile-pill-btn pill-purple">
+                  <span class="pill-address">leetcode.com/u/kunalkr1773</span>
+                  <button type="button" class="btn-copy-icon" title="Copy Link" aria-label="Copy LeetCode Link">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </button>
+                </div>
+              </a>
+
+              <!-- Card 6: Location (LPU Jalandhar, Punjab, India as requested) -->
+              <div class="contact-tile-card" data-copy="LPU Jalandhar, Punjab, India">
+                <div class="tile-top-row">
+                  <div class="tile-title-group">
+                    <svg class="tile-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span class="tile-name">Location</span>
+                  </div>
+                  <span class="tile-arrow-link">&mdash;</span>
+                </div>
+                <p class="tile-subtext">Based in Punjab, India (Open to remote work)</p>
+                <div class="tile-pill-btn pill-amber">
+                  <span class="pill-address">LPU, Jalandhar, Punjab, India</span>
+                  <button type="button" class="btn-copy-icon" title="Copy Location" aria-label="Copy Location">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Mountain Landscape Illustration with Winding Path & Wooden Signpost -->
+            <div class="contact-landscape-banner">
+              <svg viewBox="0 0 650 200" class="landscape-mountains-svg" aria-label="Mountain Landscape with winding trail and pine trees">
+                <!-- Mountain Peaks -->
+                <polygon points="260,35 390,170 130,170" fill="none" stroke="#2B2B32" stroke-width="2" stroke-linejoin="round"/>
+                <polygon points="380,50 490,175 270,175" fill="none" stroke="#2B2B32" stroke-width="1.8" stroke-linejoin="round"/>
+                <polygon points="140,65 240,175 40,175" fill="none" stroke="#2B2B32" stroke-width="1.8" stroke-linejoin="round"/>
+                <polygon points="480,75 580,180 380,180" fill="none" stroke="#2B2B32" stroke-width="1.6" stroke-linejoin="round"/>
+                
+                <!-- Snow & Ridges -->
+                <path d="M225 75 L 260 88 L 295 72" fill="none" stroke="#2B2B32" stroke-width="1.5"/>
+                <line x1="260" y1="35" x2="250" y2="165" stroke="#2B2B32" stroke-width="1.4"/>
+                <line x1="235" y1="90" x2="215" y2="140" stroke="#2B2B32" stroke-width="1" stroke-dasharray="3 3"/>
+                <line x1="245" y1="75" x2="228" y2="120" stroke="#2B2B32" stroke-width="1" stroke-dasharray="3 3"/>
+
+                <path d="M345 92 L 380 102 L 415 88" fill="none" stroke="#2B2B32" stroke-width="1.4"/>
+                <line x1="380" y1="50" x2="370" y2="170" stroke="#2B2B32" stroke-width="1.3"/>
+                <line x1="355" y1="105" x2="340" y2="150" stroke="#2B2B32" stroke-width="0.9" stroke-dasharray="3 3"/>
+
+                <path d="M108 108 L 140 118 L 168 105" fill="none" stroke="#2B2B32" stroke-width="1.3"/>
+                <line x1="140" y1="65" x2="135" y2="170" stroke="#2B2B32" stroke-width="1.2"/>
+
+                <!-- Winding Trail Road -->
+                <path d="M10 180 Q 200 160 380 178 T 640 185" fill="none" stroke="#2B2B32" stroke-width="1.8"/>
+                <path d="M140 172 Q 190 190 230 198" fill="none" stroke="#2B2B32" stroke-width="1.6" stroke-dasharray="4 4"/>
+                <path d="M155 174 Q 210 192 250 200" fill="none" stroke="#2B2B32" stroke-width="1.4"/>
+
+                <!-- Pine Trees Left Group -->
+                <polygon points="30,130 36,155 24,155" fill="#2B2B32"/>
+                <polygon points="30,145 38,172 22,172" fill="#2B2B32"/>
+                <polygon points="46,120 53,148 39,148" fill="#2B2B32"/>
+                <polygon points="46,138 56,168 36,168" fill="#2B2B32"/>
+                <polygon points="62,135 68,160 56,160" fill="#2B2B32"/>
+                <polygon points="62,150 70,174 54,174" fill="#2B2B32"/>
+
+                <!-- Pine Trees Right Group -->
+                <polygon points="450,145 456,168 444,168" fill="#2B2B32"/>
+                <polygon points="450,158 458,178 442,178" fill="#2B2B32"/>
+                <polygon points="465,138 472,160 458,160" fill="#2B2B32"/>
+                <polygon points="465,152 474,174 456,174" fill="#2B2B32"/>
+              </svg>
+
+              <!-- Wooden Signpost: "MORE IDEAS THIS WAY →" -->
+              <div class="landscape-signpost">
+                <div class="signpost-board">
+                  MORE IDEAS<br>THIS WAY &rarr;
+                </div>
+                <div class="signpost-pole"></div>
+              </div>
+
+              <!-- Handwritten Quote in Foothills -->
+              <div class="landscape-quote-handwriting">
+                "Better conversations<br>create brighter tomorrows."
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT SIDE: Torn Spiral Notepad ("Prefer a quick message?") -->
+          <div class="contact-notepad-col">
+            
+            <div class="spiral-notepad-container">
+              
+              <!-- Left Spiral Wire Rings / Holes -->
+              <div class="notepad-spiral-rings" aria-hidden="true">
+                <div class="spiral-hole"><span class="spiral-wire"></span></div>
+                <div class="spiral-hole"><span class="spiral-wire"></span></div>
+                <div class="spiral-hole"><span class="spiral-wire"></span></div>
+                <div class="spiral-hole"><span class="spiral-wire"></span></div>
+                <div class="spiral-hole"><span class="spiral-wire"></span></div>
+                <div class="spiral-hole"><span class="spiral-wire"></span></div>
+                <div class="spiral-hole"><span class="spiral-wire"></span></div>
+                <div class="spiral-hole"><span class="spiral-wire"></span></div>
+                <div class="spiral-hole"><span class="spiral-wire"></span></div>
+                <div class="spiral-hole"><span class="spiral-wire"></span></div>
+                <div class="spiral-hole"><span class="spiral-wire"></span></div>
+                <div class="spiral-hole"><span class="spiral-wire"></span></div>
+                <div class="spiral-hole"><span class="spiral-wire"></span></div>
+                <div class="spiral-hole"><span class="spiral-wire"></span></div>
+              </div>
+
+              <!-- Main Torn Notebook Page -->
+              <div class="notepad-page-paper">
+                
+                <!-- Top Handwriting & Arrow -->
+                <div class="notepad-header">
+                  <h3 class="notepad-hand-title">Prefer a quick message?</h3>
+                  <div class="notepad-hand-sub-wrap">
+                    <p class="notepad-hand-sub">
+                      Fill out the form and I'll get<br>back to you as soon as possible.
+                    </p>
+                    <svg class="form-arrow-svg" viewBox="0 0 35 25" fill="none" aria-hidden="true">
+                      <path d="M4 4 C 15 4, 25 12, 28 20" stroke="#2B2B32" stroke-width="1.6" stroke-linecap="round"/>
+                      <path d="M20 20 L 28 20 L 28 12" stroke="#2B2B32" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Contact Form (Integrated with Formspree) -->
+                <form class="craft-message-form" id="contact-message-form" action="https://formspree.io/f/xwlkjnjo" method="POST">
+                  
+                  <div class="form-field-group">
+                    <label for="contact-name" class="craft-field-label">Your Name</label>
+                    <input type="text" id="contact-name" name="name" class="craft-field-input" placeholder="John Doe" required>
+                  </div>
+
+                  <div class="form-field-group">
+                    <label for="contact-email" class="craft-field-label">Your Email</label>
+                    <input type="email" id="contact-email" name="email" class="craft-field-input" placeholder="john@example.com" required>
+                  </div>
+
+                  <div class="form-field-group">
+                    <label for="contact-msg" class="craft-field-label">Message</label>
+                    <textarea id="contact-msg" name="message" class="craft-field-textarea" rows="4" placeholder="Let's build something amazing..." required></textarea>
+                  </div>
+
+                  <div class="form-bottom-row">
+                    <button type="submit" class="btn-send-message" id="contact-submit-btn">
+                      <span class="btn-send-label">Send Message</span>
+                      <span class="btn-send-arrow">&#8599;</span>
+                    </button>
+
+                    <div class="notepad-footer-handwriting">
+                      Looking forward<br>to hearing from you!<br>
+                      <span class="hand-smiley">&#9786;</span>
+                    </div>
+                  </div>
+
+                </form>
+
+                <!-- Torn Jagged Bottom Paper Edge (SVG) -->
+                <div class="torn-paper-edge" aria-hidden="true">
+                  <svg viewBox="0 0 500 20" preserveAspectRatio="none" class="torn-edge-svg">
+                    <polygon points="0,0 25,12 50,2 75,14 100,4 125,16 150,3 175,13 200,5 225,15 250,2 275,14 300,4 325,16 350,3 375,13 400,5 425,15 450,2 475,13 500,0 500,20 0,20" fill="#ECE7DD"/>
+                  </svg>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Coffee Cup Flatlay Accent (Bottom Right Corner as in Reference) -->
+        <div class="desk-coffee-cup-accent" aria-hidden="true">
+          <img src="assets/coffee_cup.jpg" alt="Artisan coffee cup with rosetta latte art" class="coffee-cup-img">
+        </div>
+
+      </section>
+
+      <!-- ======================================================================
+           DESK FOOTER BAR (Matching Reference Image)
+           ====================================================================== -->
+      <footer class="desk-footer-bar">
+        <div class="footer-stamp">
+          THANK YOU FOR STOPPING BY &bull; // &bull; KUNAL KUMAR &bull; // &bull; 2026
+        </div>
+        <div class="footer-copy">
+          Designed &amp; Crafted by Kunal Kumar &bull; LPU Jalandhar, Punjab, India
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- JavaScript Engine -->
+  <script src="app.js"></script>
+</body>
+</html>
